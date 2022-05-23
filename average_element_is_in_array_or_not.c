@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int i,n,arr[200],sum=0,k,c=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        sum=sum+arr[i];
+    }
+    k=sum/n;
+    for(i=0;i<n;i++)
+    {
+        if(k==arr[i])
+        {
+            c+=1;
+        }
+    }
+    if(c>0)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
